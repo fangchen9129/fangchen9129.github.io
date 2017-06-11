@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Vue | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="React 和 Vue 有许多相似之处，它们都有： 使用 Virtual DOM 提供了响应式（Reactive）和组件化（Composable）的视图组件。 将注意力集中保持在核心库，而将其他功能,如路由和全局状态管理交给相关的库。性能:React 和 Vue 在大部分常见场景下都能提供近似的性能。通常 Vue 会有少量优势，因为 Vue 的 Virtual DOM 实现相对更为轻量一些。  V">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue">
+<meta property="og:url" content="http://yoursite.com/2017/06/11/hello-world/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="React 和 Vue 有许多相似之处，它们都有： 使用 Virtual DOM 提供了响应式（Reactive）和组件化（Composable）的视图组件。 将注意力集中保持在核心库，而将其他功能,如路由和全局状态管理交给相关的库。性能:React 和 Vue 在大部分常见场景下都能提供近似的性能。通常 Vue 会有少量优势，因为 Vue 的 Virtual DOM 实现相对更为轻量一些。  V">
+<meta property="og:updated_time" content="2017-06-11T10:17:47.267Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vue">
+<meta name="twitter:description" content="React 和 Vue 有许多相似之处，它们都有： 使用 Virtual DOM 提供了响应式（Reactive）和组件化（Composable）的视图组件。 将注意力集中保持在核心库，而将其他功能,如路由和全局状态管理交给相关的库。性能:React 和 Vue 在大部分常见场景下都能提供近似的性能。通常 Vue 会有少量优势，因为 Vue 的 Virtual DOM 实现相对更为轻量一些。  V">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/11/hello-world/" class="article-date">
+  <time datetime="2017-06-11T09:45:33.123Z" itemprop="datePublished">2017-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Vue
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="React-和-Vue-有许多相似之处，它们都有："><a href="#React-和-Vue-有许多相似之处，它们都有：" class="headerlink" title="React 和 Vue 有许多相似之处，它们都有："></a>React 和 Vue 有许多相似之处，它们都有：</h4><ul>
+<li>使用 Virtual DOM</li>
+<li>提供了响应式（Reactive）和组件化（Composable）的视图组件。</li>
+<li>将注意力集中保持在核心库，而将其他功能,如路由和全局状态管理交给相关的库。<br>性能:<br>React 和 Vue 在大部分常见场景下都能提供近似的性能。通常 Vue 会有少量优势，因为 Vue 的 Virtual DOM 实现相对更为轻量一些。</li>
+</ul>
+<h4 id="VUE介绍："><a href="#VUE介绍：" class="headerlink" title="VUE介绍："></a>VUE介绍：</h4><ul>
+<li><p>MVVM框架（Model-View-ViewModel），易学，轻量，灵活。<br>ViewModel是Vue.js的核心，它是一个Vue实例。</p>
+</li>
+<li><p>MVC是一种模式更是一种思想。他的应用不仅仅局限于我们的前后端整体架构。在我们单纯的前端也可以使用；<br>M：处理数据，专门写处理数据的js<br>V：专门的我们的DOM操作<br>C：专门写我们的交互。<br>理由mvc思想实现前端主流框架，是我们react。但是它是一个不完整mvc框架，他主要做的是前端view层优化，实现了并不是直接控制我们的DOM，而是产生虚拟DOM对象，在我们没有真正完成我们的DOM结构处理的时候，他都是一直处理的我们虚拟DOM。</p>
+</li>
+<li><p>vue和angular简单对比</p>
+<ul>
+<li>vue–简单，易学<ul>
+<li>指令以v-xxx,属性方法均挂在Vue的实例上，使用于移动端项目</li>
+</ul>
+</li>
+<li>angular-学习曲线陡峭<ul>
+<li>指令以ng-xxx，属性方法均挂在$scope上，使用于pc端项目</li>
+</ul>
+</li>
+<li>都不支持IE8以及其一下版本<h4 id="vue版本1-0-amp-2-0"><a href="#vue版本1-0-amp-2-0" class="headerlink" title="vue版本1.0&amp;2.0"></a>vue版本1.0&amp;2.0</h4></li>
+<li>查看版本</li>
+<li>bower info vue</li>
+<li>npm info vue</li>
+<li>下载vue</li>
+<li>安装前初始化package.json，主要用来描述自己的项目，记录安装过的文件有哪些,重新再当前目录下生成json<blockquote>
+<p>nmp init -y</p>
+</blockquote>
+</li>
+<li>通过npm安装,<blockquote>
+<p>–save或者-S代表项目依赖<br>–save-dev或者-D开发依赖<br>npm install vue@1.0.28</p>
+</blockquote>
+</li>
+<li>通过过bower安装<blockquote>
+<p>bower install vue#1.0.28<br>不指定版本默认下载最新版本</p>
+<h4 id="vue简单用法：使用Vue的过程就是定义MVVM各个组成部分的过程的过程。"><a href="#vue简单用法：使用Vue的过程就是定义MVVM各个组成部分的过程的过程。" class="headerlink" title="vue简单用法：使用Vue的过程就是定义MVVM各个组成部分的过程的过程。"></a>vue简单用法：使用Vue的过程就是定义MVVM各个组成部分的过程的过程。</h4><p>1）定义View<br>2）定义Model<br>3）创建一个Vue实例或”ViewModel”，它用于连接View和Model</p>
+</blockquote>
+</li>
+</ul>
+<p>1、创建一个vue实例:前提要引入vue.js</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>                      <span class="comment">&lt;!--html--&gt;</span></div><div class="line"> <span class="comment">&lt;!--一块json+html--&gt;</span></div><div class="line"> <span class="comment">&lt;!--用大括号会导致闪烁问题 加v-text命令--&gt;</span></div><div class="line"> <span class="comment">&lt;!--小胡子语法 取值表达式 --&gt;</span></div><div class="line">    &#123;&#123;msg&#125;&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在创建Vue实例时，需要传入一个选项对象，选项对象可以包含数据、挂载元素、方法、模生命周期钩子等等。</span></div><div class="line">   <span class="keyword">var</span> vue = <span class="keyword">new</span> Vue(&#123;                  <span class="comment">//script</span></div><div class="line">       el:<span class="string">'#app'</span>,      <span class="comment">//挂载元素 不能是html，body</span></div><div class="line">       data:&#123;       <span class="comment">//数据类型  boolean number string undefined null object array function</span></div><div class="line">            msg:<span class="string">'welcome to zfpx'</span> <span class="comment">//将要写到html页面中的内容</span></div><div class="line">       &#125;</div><div class="line">   &#125;)</div></pre></td></tr></table></figure>
+<h4 id="MVVM双向数据绑定"><a href="#MVVM双向数据绑定" class="headerlink" title="MVVM双向数据绑定"></a>MVVM双向数据绑定</h4><ul>
+<li>双向数据绑定，必须满足视图可以更改，在表单元素中才能更改，用input  textarea;</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>                          <span class="comment">&lt;!--html--&gt;</span></div><div class="line">     <span class="comment">&lt;!--双向数据绑定 需要一个指令  所有的表单元素都需要增加v-model属性 只能绑定变量--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"msg"</span>&gt;</span></div><div class="line">       &#123;&#123;msg&#125;&#125;</div><div class="line">       <span class="comment">&lt;!--&#123;&#125;叫表达式 支持赋值 常用方式三元表达式 运算 最终结果要有返回值 不支持逻辑if else --&gt;</span></div><div class="line"></div><div class="line">       <span class="comment">&lt;!--绑定一次 1.0的写法--&gt;</span></div><div class="line">       &#123;&#123;*msg&#125;&#125;</div><div class="line"></div><div class="line">       <span class="comment">&lt;!--绑定一次 2.0的写法--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-once</span>&gt;</span>&#123;&#123;mas&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">       <span class="comment">&lt;!--如果我们绑定的数据 是html-&gt; 标签 2.0的写法--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-html</span>=<span class="string">"msg"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">       <span class="comment">&lt;!--如果我们绑定的数据 是html-&gt; 标签 1.0的写法--&gt;</span></div><div class="line">       &#123;&#123;&#123;msg&#125;&#125;&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> vue = <span class="keyword">new</span> Vue(&#123;                     <span class="comment">//script</span></div><div class="line">    el:<span class="string">'#app'</span>,</div><div class="line">    <span class="attr">data</span>:&#123;</div><div class="line">        <span class="attr">msg</span>:<span class="string">'welcome to zfpx'</span>, <span class="comment">//将要写到html页面中的内容</span></div><div class="line">        age:<span class="number">0</span></div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h4 id="数据绑定ary"><a href="#数据绑定ary" class="headerlink" title="数据绑定ary"></a>数据绑定ary</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>                          <span class="comment">&lt;!--html--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!--(a)变量代表的就是arr中的某一个 1.0写法--&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"(index,val) in arr"</span> <span class="attr">track-by</span>=<span class="string">"$index"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!--在2.0版本中没有声明过的$index不能使用，说明track-by就废弃掉了--&gt;</span></div><div class="line">            &#123;&#123;$index&#125;&#125; &#123;&#123;index&#125;&#125; &#123;&#123;val&#125;&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"(val,index) in arr"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!--2.0中的for循环更趋近于我们原生js中的arr.forEach(function(item,index)&#123;&#125;)--&gt;</span></div><div class="line">        &#123;&#123;val&#125;&#125; &#123;&#123;index&#125;&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--遍历数组时，需要加track by = $index 避免重复项--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> Vue(&#123;                               <span class="comment">//script</span></div><div class="line">    el:<span class="string">'#app'</span>,</div><div class="line">    <span class="attr">data</span>:&#123;</div><div class="line">       <span class="attr">arr</span>:[<span class="string">'iphone6'</span>,<span class="string">'iphone7'</span>]</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h4 id="绑定数据obj"><a href="#绑定数据obj" class="headerlink" title="绑定数据obj"></a>绑定数据obj</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>                         <span class="comment">&lt;!--html--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--val代表的是obj中的值 1.0用法--&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"(key,val) in obj"</span>&gt;</span></div><div class="line">            &#123;&#123;val&#125;&#125; &#123;&#123;$index&#125;&#125;&#123;&#123;key&#125;&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!--2.0中没有声明的变量不能直接使用--&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"(val,key) in obj"</span>&gt;</span></div><div class="line">            &#123;&#123;val&#125;&#125; &#123;&#123;key&#125;&#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!--如果v-for不使用() 那就是value，使用小括号在1.0中是key，val；在2.0中是value，key--&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;                      <span class="comment">//script</span></div><div class="line">    el:<span class="string">'#app'</span>,</div><div class="line">    <span class="attr">data</span>:&#123;</div><div class="line">        <span class="attr">obj</span>:&#123;</div><div class="line">            <span class="attr">name</span>:<span class="string">'zfpx'</span>,</div><div class="line">            <span class="attr">age</span>:<span class="number">8</span>,</div><div class="line">            <span class="attr">address</span>:<span class="string">'回龙观东大街'</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h4 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>                          <span class="comment">&lt;!--html--&gt;</span></div><div class="line">       <span class="comment">&lt;!--默认的onClick会带一层函数 这个函数中 写的内容是 你写的东西 如果只写一个a 则没变化，写了a()才会调用a函数--&gt;</span></div><div class="line">       <span class="comment">&lt;!--函数执行时 带括号 一般是传递参数，会丢失event源，可以手动传递属性$event--&gt;</span></div><div class="line">       <span class="comment">&lt;!--v-on：可以简写为@符号--&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"fn($event)"</span>&gt;</span>点击增加<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"iphone in arr"</span>&gt;</span></div><div class="line">        &#123;&#123;iphone&#125;&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--默认事件时冒泡的 .stop.xxx.xxx修饰符--&gt;</span></div><div class="line">        <span class="comment">&lt;!--capture捕获--&gt;</span></div><div class="line">        <span class="comment">&lt;!--self 只在自己身上触发--&gt;</span></div><div class="line">        <span class="comment">&lt;!--once只触发一次--&gt;</span></div><div class="line">        <span class="comment">&lt;!--prevent只触发一次--&gt;</span></div><div class="line">        <span class="comment">&lt;!--键盘修饰符 @keyup / @keydown--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//加括号 一般用于传递参数，如果传递参数要手动增加e</span></div><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;                      <span class="comment">//script</span></div><div class="line">    el:<span class="string">'#app'</span>,</div><div class="line">    <span class="attr">data</span>:&#123;</div><div class="line">       <span class="attr">arr</span>:[<span class="string">'iphone6'</span>,<span class="string">'iphone7'</span>]</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">methods</span>:&#123;</div><div class="line">        fn(e)&#123;</div><div class="line">            <span class="comment">//所有方法中的this指向的都是实例vm</span></div><div class="line">            <span class="keyword">this</span>.arr.push(<span class="string">'iphone8'</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"><span class="comment">//所有的数据都会挂载在实例上</span></div><div class="line"><span class="built_in">console</span>.log(vm.arr);</div></pre></td></tr></table></figure>
+<h4 id="show-if"><a href="#show-if" class="headerlink" title="show-if"></a>show-if</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--真的消失 样式上的消失--&gt;</span></div><div class="line">    <span class="comment">&lt;!-- v-show 如果为false 则display：none 如果频繁切换显示或者隐藏我们就使用v-show --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- v-if 如果为false 则removeChild 不频繁切换时、判断数据是否存在用v-if --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-show</span>=<span class="string">"flag"</span>&gt;</span>是否为true，为true显示，否则消失<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"obj"</span>&gt;</span></div><div class="line">        &#123;&#123;obj.name&#125;&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">    <span class="attr">el</span>:<span class="string">'#app'</span>,</div><div class="line">    <span class="attr">data</span>:&#123;</div><div class="line">        <span class="attr">flag</span>:<span class="literal">false</span>,</div><div class="line">        <span class="attr">obj</span>:&#123;<span class="attr">name</span>:<span class="number">1</span>&#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="vue的常用指令"><a href="#vue的常用指令" class="headerlink" title="vue的常用指令"></a>vue的常用指令</h4><p>Vue.js的指令是以v-开头的，它们作用于HTML元素，指令提供了一些特殊的特性，将指令绑定在元素上时，指令会为绑定的目标元素添加一些特殊的行为，我们可以将指令看作特殊的HTML特性（attribute）。<br> Vue.js提供了一些常用的内置指令：</p>
+<ul>
+<li>v-html指令(2.0以上)<ul>
+<li>当绑定的数据是html字符串时，展示成正常的html</li>
+</ul>
+</li>
+<li>v-once指令(2.0以上)<ul>
+<li>有时候我们想让数据只绑定一次，当数据在更改时不会更新内容</li>
+<li>被v-once包住的属性，就不会再发生变化</li>
+</ul>
+</li>
+<li>v-model指令<ul>
+<li>只能绑定变量，先将对应的数据放到输入框的value值上</li>
+<li>会监听输入框的输入事件 oninput，将值放回到数据中</li>
+</ul>
+</li>
+<li>v-if指令<ul>
+<li>v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：   v-if=”expression”</li>
+<li>expression是一个返回bool值的表达式，表达式可以是一个bool属性，也可以是一个返回bool的运算式。</li>
+<li>注意：v-if指令是根据条件表达式的值来执行元素的插入或者删除行为。</li>
+</ul>
+</li>
+<li>v-show指令<ul>
+<li>v-show也是条件渲染指令，和v-if指令不同的是，使用v-show指令的元素始终会被渲染到HTML，它只是简单地为元素设置CSS的style属性。</li>
+</ul>
+</li>
+<li>v-else指令<ul>
+<li>可以用v-else指令为v-if或v-show添加一个“else块”。v-else元素必须立即跟在v-if或v-show元素的后面——否则它不能被识别。</li>
+<li>v-else元素是否渲染在HTML中，取决于前面使用的是v-if还是v-show指令。</li>
+</ul>
+</li>
+<li>v-for指令<ul>
+<li>v-for指令基于一个数组渲染一个列表，它和JavaScript的遍历语法相似：<br>v-for=”item in items”<br>items是一个数组，item是当前被遍历的数组元素。<br>v-for=”(value,key) in obj”<br>obj是一个对象，value是当前被遍历的对象中的属性值，key是属性名。</li>
+</ul>
+</li>
+<li>v-bind指令<ul>
+<li>v-bind指令可以在其名称后面带一个参数，中间放一个冒号隔开，这个参数通常是HTML元素的特性（attribute）<br>例如：v-bind:class<pre><code>v-bind:argument=&quot;expression&quot;
+</code></pre></li>
+</ul>
+</li>
+<li><p>v-on指令</p>
+<ul>
+<li><p>v-on指令用于给监听DOM事件，它的用语法和v-bind是类似的，例如监听a元素的点击事件：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click</span>=<span class="string">"doSomething"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>有两种形式调用方法：绑定一个方法（让事件指向方法的引用），或者使用内联语句。</p>
+</li>
+<li>函数执行是，带括号一般是传递参数，如果不传参，会丢失event源；可以手动传递$event参数<h5 id="v-bind和v-on的缩写"><a href="#v-bind和v-on的缩写" class="headerlink" title="v-bind和v-on的缩写:"></a>v-bind和v-on的缩写:</h5></li>
+</ul>
+<ul>
+<li>Vue.js为最常用的两个指令v-bind和v-on提供了缩写方式。</li>
+<li>v-bind指令可以缩写为一个冒号，v-on指令可以缩写为@符号。<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--完整语法--&gt;</span></div><div class="line"><span class="comment">&lt;!--:绑定的class 和原生的不冲突 如果冲突:号会覆盖普通的class--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascripit:void(0)"</span> <span class="attr">v-bind:class</span>=<span class="string">"activeNumber === n + 1 ? 'active' : ''"</span>&gt;</span>&#123;&#123; n + 1 &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--缩写语法--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascripit:void(0)"</span> <span class="attr">:class</span>=<span class="string">"activeNumber=== n + 1 ? 'active' : ''"</span>&gt;</span>&#123;&#123; n + 1 &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!--完整语法--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"greet"</span>&gt;</span>Greet<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--缩写语法--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"greet"</span>&gt;</span>Greet<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/11/hello-world/" data-id="cj3sj2zet0000kox2mjni4ksy" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/11/hello-world/">Vue</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
