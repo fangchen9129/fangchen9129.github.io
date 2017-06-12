@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -215,11 +215,18 @@
 </ul>
 </li>
 </ul>
+<h4 id="vue中对于数组的一些方法"><a href="#vue中对于数组的一些方法" class="headerlink" title="vue中对于数组的一些方法"></a>vue中对于数组的一些方法</h4><p>1、find  查找<br>返回值：返回查找到的那一项，仅仅是一个<br>如果在find()函数中返回true，会将找到的这一项返回，如果没有true则返回undefined<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let arr = [&#123;name: &apos;zfpx&apos;&#125;, &#123;name: &apos;hello&apos;&#125;, &#123;name: &apos;zfpx&apos;&#125;, &#123;name: &apos;zfpx&apos;&#125;];</div><div class="line">let username = &apos;zfpx&apos;;</div><div class="line">let obj = arr.find(function (item, index) &#123;</div><div class="line">    return username === item.name;//需要return返回</div><div class="line">&#125;);</div><div class="line">console.log(obj);//Object &#123;name: &quot;zfpx&quot;&#125;</div></pre></td></tr></table></figure></p>
+<p>2、some 查找判断<br>返回值：true/false<br>简易的判断是否包含某一项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let newArr = [5, 6, 11];</div><div class="line">let flag = newArr.some(function (item, index) &#123;</div><div class="line">    return item &gt; 11;</div><div class="line">&#125;);</div><div class="line">console.log(flag);//false</div></pre></td></tr></table></figure></p>
+<p>3、map映射 可以将一个数组变成另一种方式显示，返新数组：可以做修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let arrList = [&#123;name: &apos;zfpx&apos;, age: 8&#125;, &#123;name: &apos;fc&apos;, age: 18&#125;];</div><div class="line">let list = arrList.map(function (item, index) &#123;//里面可以传递一个方法，用来修改数组</div><div class="line">    return `&lt;li&gt;$&#123;item.name&#125;$&#123;item.age&#125;&lt;/li&gt;`</div><div class="line">&#125;);</div><div class="line">console.log(list.join(&apos;&apos;));//&lt;li&gt;zfpx8&lt;/li&gt;&lt;li&gt;fc18&lt;/li&gt;</div></pre></td></tr></table></figure></p>
+<p>4、filter 过滤<br>返回值：如果函数中返回true则将这一或多项放到新数组中返回<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">let filterArr = [&#123;name: &apos;zfpx&apos;, age: 8&#125;, &#123;name: &apos;fc&apos;, age: 18&#125;,&#123;name: &apos;zfpx&apos;, age: 8&#125;].filter(function (item, index) &#123;</div><div class="line">       return item.name === &apos;zfpx&apos;;//如果给你某一项，让你删除掉，条件都是！==</div><div class="line">   &#125;);</div><div class="line">   console.log(filterArr);//[Object, Object]</div></pre></td></tr></table></figure></p>
+<p>5、reduce 可以返回叠加后的结果<br>返回值：叠加后的结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">直接用来数组的叠加结果：</div><div class="line">let sum = [1, 2, 3, 4, 5].reduce(function (prev, next, index, arr) &#123;</div><div class="line">    console.log(prev, next, index, arr);//下一次会将当前这次的结果作为下一次的上一次</div><div class="line">    return prev + next;</div><div class="line">&#125;);</div><div class="line">console.log(sum);//15</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">可以用来计算对象中各值叠加的结果：</div><div class="line">let res = [&#123;price: 10&#125;, &#123;price: 20&#125;, &#123;price: 30&#125;].reduce(function (prev, next, index, arr) &#123;</div><div class="line">    console.log(prev, next, index, arr);</div><div class="line">    return prev + next.price;</div><div class="line">&#125;,0);//注意：第二个参数 可以手动指定第一次的prev;</div><div class="line">console.log(res);//60</div></pre></td></tr></table></figure>
+<p>6、forEach(确定不能return)，for in(可以遍历数组，数组外的属性依然可以获取)，for of(只会遍历数组中的内容，可以break，不能遍历对象)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let arrs = [1,2,3,5];//将对象转化为数组Object.keys(arrs)</div><div class="line">arrs.a = 100;</div><div class="line">for (let val of arrs)&#123;</div><div class="line">    console.log(val);//1</div><div class="line">    break;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/11/hello-world/" data-id="cj3snw0250000dsx2exmsjnyk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/11/hello-world/" data-id="cj3trs4hl0000nox2ac80ys97" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -254,7 +261,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -275,7 +282,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
